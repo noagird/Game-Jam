@@ -1,11 +1,11 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Key/key.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/Seamless Carpet Texture + (Maps).png" type="Texture" id=3]
 [ext_resource path="res://UI/InputRemapMenu.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/315844__gneube__zombie-snarl.wav" type="AudioStream" id=5]
-[ext_resource path="res://Assets/The Biggest Discovery.ogg" type="AudioStream" id=6]
+[ext_resource path="res://Audio/Music_Main_Loop.ogg" type="AudioStream" id=6]
 [ext_resource path="res://Assets/341695__projectsu012__coins-1.wav" type="AudioStream" id=7]
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Enemy/Enemies.gd" type="Script" id=9]
@@ -25,6 +25,7 @@
 [ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Enemy/Child.tscn" type="PackedScene" id=24]
 [ext_resource path="res://Enemy/Son.tscn" type="PackedScene" id=25]
+[ext_resource path="res://Game.gd" type="Script" id=26]
 
 [sub_resource type="SpatialMaterial" id=13]
 albedo_texture = ExtResource( 3 )
@@ -95,6 +96,7 @@ extents = Vector3( 0.5, 0.1, 0.5 )
 
 [node name="Game" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.132748, 0, -2.727 )
+script = ExtResource( 26 )
 
 [node name="Maze" type="Spatial" parent="."]
 
@@ -492,10 +494,8 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.667522 )
 enabled = true
 cast_to = Vector3( 0, 0, -30 )
 
-[node name="Music" type="AudioStreamPlayer" parent="."]
+[node name="Music_Main_Loop" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
-volume_db = -25.687
-pitch_scale = 0.9
 
 [node name="Key" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
