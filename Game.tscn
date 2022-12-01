@@ -1,32 +1,28 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [gd_scene load_steps=41 format=2]
 =======
 [gd_scene load_steps=46 format=2]
 >>>>>>> Stashed changes
+=======
+[gd_scene load_steps=20 format=2]
+>>>>>>> Stashed changes
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
-[ext_resource path="res://Key/key.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Assets/Seamless Carpet Texture + (Maps).png" type="Texture" id=3]
+[ext_resource path="res://Maze/Maze.tscn" type="PackedScene" id=2]
 [ext_resource path="res://UI/InputRemapMenu.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/315844__gneube__zombie-snarl.wav" type="AudioStream" id=5]
 [ext_resource path="res://Assets/The Biggest Discovery.ogg" type="AudioStream" id=6]
 [ext_resource path="res://Assets/341695__projectsu012__coins-1.wav" type="AudioStream" id=7]
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Enemy/Enemies.gd" type="Script" id=9]
 [ext_resource path="res://Player/Blaster.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Assets/muzzleflash.obj" type="ArrayMesh" id=11]
 [ext_resource path="res://Player/Muzzle.tres" type="Material" id=12]
 [ext_resource path="res://Player/Flash.gd" type="Script" id=13]
-[ext_resource path="res://Assets/photos_2016_1_26_fst_8126d235ec9-0649-433c-b050-b299429e2fb6.png" type="Texture" id=14]
-[ext_resource path="res://Key/pizza.tscn" type="PackedScene" id=15]
-[ext_resource path="res://Key/sausage.tscn" type="PackedScene" id=16]
-[ext_resource path="res://Key/loaf.tscn" type="PackedScene" id=17]
-[ext_resource path="res://Key/cheese.tscn" type="PackedScene" id=18]
-[ext_resource path="res://Key/tomato.tscn" type="PackedScene" id=19]
-[ext_resource path="res://Assets/gray-vinyl-carpet-background-bowen-texture-full-frame_136875-3838.png" type="Texture" id=20]
 [ext_resource path="res://Enemy/Dad.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Enemy/Mom.tscn" type="PackedScene" id=22]
 
+<<<<<<< Updated upstream
 [sub_resource type="SpatialMaterial" id=13]
 albedo_texture = ExtResource( 3 )
 roughness = 0.62
@@ -87,6 +83,8 @@ material = SubResource( 16 )
 albedo_color = Color( 0.317647, 0.282353, 0.282353, 1 )
 albedo_texture = ExtResource( 14 )
 
+=======
+>>>>>>> Stashed changes
 [sub_resource type="CapsuleShape" id=4]
 radius = 0.5
 height = 1.5
@@ -97,6 +95,7 @@ extents = Vector3( 0.5, 0.1, 0.5 )
 [node name="Game" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.132748, 0, -2.727 )
 
+<<<<<<< Updated upstream
 [node name="Maze" type="Spatial" parent="."]
 
 [node name="Ground" type="StaticBody" parent="Maze"]
@@ -432,6 +431,9 @@ material = SubResource( 18 )
 
 [node name="Enemies" type="Spatial" parent="Maze"]
 script = ExtResource( 9 )
+=======
+[node name="Maze" parent="." instance=ExtResource( 2 )]
+>>>>>>> Stashed changes
 
 [node name="Enemy" parent="." instance=ExtResource( 8 )]
 transform = Transform( 1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 12.9401, 0, -8.61336 )

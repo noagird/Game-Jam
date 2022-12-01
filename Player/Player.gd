@@ -13,7 +13,11 @@ var max_speed = 8
 var mouse_sensitivity = 0.002
 var mouse_range = 1.2
 
+<<<<<<< Updated upstream
 var to_pickup = null
+=======
+var to_pickup = null #whether item is picked up or not
+>>>>>>> Stashed changes
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -36,6 +40,8 @@ func get_input():
 	if Input.is_action_pressed("right"):
 		input_dir += Camera.global_transform.basis.x
 	input_dir = input_dir.normalized()
+	if Input.is_action_pressed("pickup"):
+		pickup()
 	return input_dir
 	
 func pickup():
