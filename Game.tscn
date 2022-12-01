@@ -1,4 +1,4 @@
-[gd_scene load_steps=93 format=2]
+[gd_scene load_steps=97 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Key/key.tscn" type="PackedScene" id=2]
@@ -26,6 +26,9 @@
 [ext_resource path="res://Enemy/Child.tscn" type="PackedScene" id=24]
 [ext_resource path="res://Enemy/Son.tscn" type="PackedScene" id=25]
 [ext_resource path="res://Game.gd" type="Script" id=26]
+[ext_resource path="res://Audio/FS_Carpet_01.ogg" type="AudioStream" id=27]
+[ext_resource path="res://Audio/FS_Carpet_03.ogg" type="AudioStream" id=28]
+[ext_resource path="res://Audio/FS_Carpet_02.ogg" type="AudioStream" id=29]
 
 [sub_resource type="SpatialMaterial" id=13]
 albedo_texture = ExtResource( 3 )
@@ -2682,6 +2685,18 @@ one_shot = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.667522 )
 enabled = true
 cast_to = Vector3( 0, 0, -30 )
+
+[node name="FS_Carpet_01" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource( 27 )
+
+[node name="FS_Carpet_02" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource( 29 )
+
+[node name="FS_Carpet_03" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource( 28 )
+
+[node name="FS_Timer" type="Timer" parent="Player"]
+one_shot = true
 
 [node name="Music_Main_Loop" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
