@@ -1,8 +1,18 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=5 format=2]
+=======
+[gd_scene load_steps=8 format=2]
+>>>>>>> Stashed changes
 
 [ext_resource path="res://UI/Win.gd" type="Script" id=1]
 [ext_resource path="res://UI/Theme.tres" type="Theme" id=2]
 [ext_resource path="res://Assets/BERNHC.TTF" type="DynamicFontData" id=3]
+<<<<<<< Updated upstream
+=======
+[ext_resource path="res://House/HouseWin.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Key/pizza.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Audio/Music_Win.wav" type="AudioStream" id=6]
+>>>>>>> Stashed changes
 
 [sub_resource type="DynamicFont" id=1]
 size = 32
@@ -52,5 +62,16 @@ margin_bottom = 240.0
 theme = ExtResource( 2 )
 text = "Quit"
 
+<<<<<<< Updated upstream
+=======
+[node name="MazeWin" parent="." instance=ExtResource( 4 )]
+
+[node name="pizza" parent="MazeWin" instance=ExtResource( 5 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 10.2466, 1.43247, -9.74571 )
+
+[node name="Music_Win" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+>>>>>>> Stashed changes
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
