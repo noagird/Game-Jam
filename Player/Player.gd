@@ -10,12 +10,15 @@ var mouse_range = 1.2
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	$Pivot/Camera.current = true
+	randomize()
 
 var velocity = Vector3()
+
 
 onready var rc = $Pivot/RayCast
 onready var flash = $Pivot/Blaster/Flash
 onready var Decal = preload("res://Player/Decal.tscn")
+onready var audio_stream_array = [$FS_Carpet_01, $FS_Carpet_02, $FS_Carpet_03]
 
 func get_input():
 	var input_dir = Vector3()
@@ -43,6 +46,13 @@ func _physics_process(delta):
 	velocity.x = desired_velocity.x
 	velocity.z = desired_velocity.z
 	velocity = move_and_slide(velocity, Vector3.UP, true)
+	
+	if velocity.length() > 0:
+		if $FS_Timer.time_left <= 0:
+			var clip_to_play = audio_stream_array[randi() % audio_stream_array.size()]
+			clip_to_play.pitch_scale = rand_range(0.8, 1.2)
+			clip_to_play.play()
+			$FS_Timer.start(0.29)
 	
 	if Input.is_action_pressed("shoot"):
 		flash.shoot()
