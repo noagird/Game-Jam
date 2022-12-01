@@ -9,6 +9,7 @@ var has_dough = false
 var has_tomato = false
 var has_cheese = false
 var has_sausage = false
+var pickup_pitch = 0.75
 
 func _ready():
 	pause_mode = Node.PAUSE_MODE_PROCESS
