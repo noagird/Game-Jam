@@ -1,8 +1,8 @@
-# The Robot Shooter
+# Pizza Time
 A project for my game design class
 
 Description
-a game where you go through a maze to find a key in order to escape a robot infested area
+You are a kid trying to get all of the ingredients for your moms pizza, but your family is trying to stop you! Avoid them and find the ingredients before its too late!!
 
 ## Implementation
 A first-person player-controlled character that can move with keyboard and mouse control
@@ -10,29 +10,16 @@ A first-person player-controlled character that can move with keyboard and mouse
 
 A maze for your character to navigate
 
+Items that are able to be obtained
 
-At least one use of Constructive Solid Geometry
+Moving Enemies
 
-
-At least one object to pick up or interact with
-
-
-At least one enemy to impede your progress
+Win/Lose Condition
 
 
-A main menu, an in-game menu, and an end-game screen
+Music and Sounds
 
 
-clear objective
-
-
-Large, elaborate level
-
-
-Music and sound effects
-
-
-Creative use of lights or materials
 
 
 
@@ -52,12 +39,31 @@ https://opengameart.org/content/muzzle-flash-with-model
 https://opengameart.org/content/bullet-decal
 
 
-https://kenney.nl/assets/blaster-kit
+https://kenney.nl/assets/blaster-kit](https://www.vecteezy.com/vector-art/5139863-peperoni-pizza-vector-icon-illustration-peperoni-pizza-vector-flat-cartoon-style-suitable-for-web-landing-page-banner-flyer-sticker-wallpaper-background
 
+
+https://www.vecteezy.com/vector-art/112243-clock-parts-vector-shapes
+
+
+https://kenney.nl/assets/crosshair-pack)
+
+https://www.kenney.nl/assets/blaster-kit
+
+
+https://www.kenney.nl/assets/animated-characters-2
+
+
+https://www.kenney.nl/assets/food-kit
+
+
+https://www.kenney.nl/assets/animated-characters
+
+
+https://www.kenney.nl/assets/blocky-characters
 
 
 ## Future Development
 None
 
 ## Created by
-Travon Ternoir
+Travon Ternoir, Elizabeth Jiang, Bryce Cain, Noah Girdler
