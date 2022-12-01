@@ -30,14 +30,17 @@ func _update_checkboxes():
 		$ColorRect/Dough.pressed = true
 	else:
 		pass
+		
 	if Global.has_tomato == true:
 		$ColorRect/Tomato.pressed = true
 	else:
 		pass
+		
 	if Global.has_cheese == true:
 		$ColorRect/Cheese.pressed = true
 	else:
 		pass
+		
 	if Global.has_sausage == true:
 		$ColorRect/Sausage.pressed = true
 	else:
