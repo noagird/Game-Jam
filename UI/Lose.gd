@@ -6,7 +6,7 @@ func _ready():
 
 func _on_Play_pressed():
 	var _scene = get_tree().change_scene("res://Game.tscn")
-	Global.time = 300
+	Global.reset()
 
 
 func _on_Quit_pressed():

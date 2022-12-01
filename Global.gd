@@ -5,6 +5,10 @@ const SAVE_PATH = "res://settings.cfg"
 var save_file = ConfigFile.new()
 var inputs = ["left","right","forward","back"]
 var time = 0
+var has_dough = false
+var has_tomato = false
+var has_cheese = false
+var has_sausage = false
 
 func _ready():
 	pause_mode = Node.PAUSE_MODE_PROCESS
@@ -44,3 +48,10 @@ func save_input():
 		for a in actions:
 			save_file.set_value("Inputs", i, a)
 	save_file.save(SAVE_PATH)
+
+func reset():
+	time = 120
+	has_dough = false
+	has_tomato = false
+	has_cheese = false
+	has_sausage = false

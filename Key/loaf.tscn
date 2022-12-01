@@ -45,4 +45,4 @@ mesh = SubResource( 1 )
 transform = Transform( -4.37114e-08, -1, 0, -4.37114e-08, 1.91069e-15, -1, 1, -4.37114e-08, -4.37114e-08, 0.00957441, 0.202965, -0.000112414 )
 shape = SubResource( 2 )
 
-[connection signal="area_entered" from="." to="." method="_on_loaf_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_loaf_body_entered"]

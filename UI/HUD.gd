@@ -7,6 +7,9 @@ func _ready():
 	$Message.show()
 	$Message/MessageTimer.start()
 
+func _physics_process(_delta):
+	_update_checkboxes()
+
 func _on_MessageTimer_timeout():
 	get_tree().paused = false
 	$Message.hide()
@@ -21,3 +24,21 @@ func _on_Timer_timeout():
 		var _scene = get_tree().change_scene("res://UI/Lose.tscn")
 	else:
 		update_time()
+
+func _update_checkboxes():
+	if Global.has_dough == true:
+		$ColorRect/Dough.pressed = true
+	else:
+		pass
+	if Global.has_tomato == true:
+		$ColorRect/Tomato.pressed = true
+	else:
+		pass
+	if Global.has_cheese == true:
+		$ColorRect/Cheese.pressed = true
+	else:
+		pass
+	if Global.has_sausage == true:
+		$ColorRect/Sausage.pressed = true
+	else:
+		pass

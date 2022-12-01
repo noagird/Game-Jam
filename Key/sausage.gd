@@ -1,9 +1,6 @@
 extends Area
 
-
-func _ready():
-	pass
-
-
-func _on_sausage_area_entered(_area):
-	pass # Replace with function body.
+func _on_sausage_body_entered(body):
+	if body.name == "Player":
+		Global.has_sausage = true
+		queue_free()
