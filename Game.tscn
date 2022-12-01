@@ -1,5 +1,6 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [gd_scene load_steps=41 format=2]
 =======
 [gd_scene load_steps=46 format=2]
@@ -10,17 +11,43 @@
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Maze/Maze.tscn" type="PackedScene" id=2]
+=======
+[gd_scene load_steps=90 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Key/key.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Seamless Carpet Texture + (Maps).png" type="Texture" id=3]
+>>>>>>> Stashed changes
 [ext_resource path="res://UI/InputRemapMenu.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/315844__gneube__zombie-snarl.wav" type="AudioStream" id=5]
 [ext_resource path="res://Assets/The Biggest Discovery.ogg" type="AudioStream" id=6]
 [ext_resource path="res://Assets/341695__projectsu012__coins-1.wav" type="AudioStream" id=7]
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=8]
+<<<<<<< Updated upstream
 [ext_resource path="res://Player/Blaster.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Assets/muzzleflash.obj" type="ArrayMesh" id=11]
 [ext_resource path="res://Player/Muzzle.tres" type="Material" id=12]
 [ext_resource path="res://Player/Flash.gd" type="Script" id=13]
 [ext_resource path="res://Enemy/Dad.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Enemy/Mom.tscn" type="PackedScene" id=22]
+=======
+[ext_resource path="res://Enemy/Enemies.gd" type="Script" id=9]
+[ext_resource path="res://Assets/photos_2016_1_26_fst_8126d235ec9-0649-433c-b050-b299429e2fb6.png" type="Texture" id=14]
+[ext_resource path="res://Key/pizza.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Key/sausage.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Key/loaf.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Key/cheese.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Key/tomato.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Assets/gray-vinyl-carpet-background-bowen-texture-full-frame_136875-3838.png" type="Texture" id=20]
+[ext_resource path="res://Enemy/Dad.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Enemy/Mom.tscn" type="PackedScene" id=22]
+[ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Enemy/Child.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Enemy/Son.tscn" type="PackedScene" id=25]
+[ext_resource path="res://Game.gd" type="Script" id=26]
+[ext_resource path="res://FX_Pickup.gd" type="Script" id=30]
+[ext_resource path="res://Audio/FX_Pickup.ogg" type="AudioStream" id=31]
+>>>>>>> Stashed changes
 
 <<<<<<< Updated upstream
 [sub_resource type="SpatialMaterial" id=13]
@@ -83,6 +110,7 @@ material = SubResource( 16 )
 albedo_color = Color( 0.317647, 0.282353, 0.282353, 1 )
 albedo_texture = ExtResource( 14 )
 
+<<<<<<< Updated upstream
 =======
 >>>>>>> Stashed changes
 [sub_resource type="CapsuleShape" id=4]
@@ -91,6 +119,149 @@ height = 1.5
 
 [sub_resource type="BoxShape" id=5]
 extents = Vector3( 0.5, 0.1, 0.5 )
+=======
+[sub_resource type="CubeMesh" id=20]
+size = Vector3( 5, 1, 3 )
+
+[sub_resource type="SpatialMaterial" id=21]
+albedo_color = Color( 0.803922, 0.160784, 0.160784, 1 )
+
+[sub_resource type="SpatialMaterial" id=22]
+albedo_color = Color( 0.419608, 0.105882, 0.105882, 1 )
+
+[sub_resource type="SpatialMaterial" id=23]
+albedo_color = Color( 0.333333, 0.12549, 0.12549, 1 )
+
+[sub_resource type="SpatialMaterial" id=24]
+albedo_color = Color( 0.862745, 0.156863, 0.156863, 1 )
+
+[sub_resource type="SpatialMaterial" id=25]
+albedo_color = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+
+[sub_resource type="SpatialMaterial" id=26]
+albedo_color = Color( 0.588235, 0.294118, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=27]
+albedo_color = Color( 0.588235, 0.294118, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=28]
+albedo_color = Color( 0.988235, 0.996078, 0.117647, 1 )
+
+[sub_resource type="SpatialMaterial" id=29]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=30]
+albedo_color = Color( 0.921569, 0.823529, 0.168627, 1 )
+
+[sub_resource type="SpatialMaterial" id=31]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=32]
+albedo_color = Color( 0.588235, 0.294118, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=33]
+albedo_color = Color( 0.588235, 0.294118, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=34]
+albedo_color = Color( 0.588235, 0.294118, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=35]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=36]
+albedo_color = Color( 0.384314, 0.290196, 0.180392, 1 )
+
+[sub_resource type="SpatialMaterial" id=37]
+albedo_color = Color( 0.384314, 0.290196, 0.180392, 1 )
+
+[sub_resource type="SpatialMaterial" id=38]
+albedo_color = Color( 0.588235, 0.294118, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=39]
+albedo_color = Color( 0.588235, 0.294118, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=40]
+albedo_color = Color( 0.490196, 0.243137, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=41]
+albedo_color = Color( 0.462745, 0.239216, 0.0156863, 1 )
+
+[sub_resource type="SpatialMaterial" id=42]
+albedo_color = Color( 0.486275, 0.619608, 0.419608, 1 )
+
+[sub_resource type="SpatialMaterial" id=43]
+albedo_color = Color( 0.831373, 0.176471, 0.176471, 1 )
+
+[sub_resource type="SpatialMaterial" id=44]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=45]
+
+[sub_resource type="SpatialMaterial" id=46]
+albedo_color = Color( 0.701961, 0.0588235, 0.0588235, 1 )
+
+[sub_resource type="SpatialMaterial" id=47]
+albedo_color = Color( 0.215686, 0.2, 0.2, 1 )
+
+[sub_resource type="SpatialMaterial" id=49]
+albedo_color = Color( 0.309804, 0.290196, 0.290196, 1 )
+
+[sub_resource type="SpatialMaterial" id=50]
+albedo_color = Color( 0.309804, 0.290196, 0.290196, 1 )
+
+[sub_resource type="SpatialMaterial" id=51]
+albedo_color = Color( 0.713726, 0.0941176, 0.0941176, 1 )
+
+[sub_resource type="SpatialMaterial" id=52]
+albedo_color = Color( 0.713726, 0.0941176, 0.0941176, 1 )
+
+[sub_resource type="SpatialMaterial" id=53]
+albedo_color = Color( 0.533333, 0.529412, 0.835294, 1 )
+
+[sub_resource type="SpatialMaterial" id=54]
+albedo_color = Color( 0.533333, 0.529412, 0.835294, 1 )
+
+[sub_resource type="SpatialMaterial" id=55]
+albedo_color = Color( 0.470588, 0.0901961, 0.0901961, 1 )
+
+[sub_resource type="SpatialMaterial" id=56]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=57]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=58]
+albedo_color = Color( 0.4, 0.447059, 0.752941, 1 )
+
+[sub_resource type="SpatialMaterial" id=59]
+albedo_color = Color( 0.482353, 0.380392, 0.380392, 1 )
+
+[sub_resource type="SpatialMaterial" id=60]
+albedo_color = Color( 0.65098, 0.65098, 0.65098, 1 )
+
+[sub_resource type="SpatialMaterial" id=61]
+
+[sub_resource type="SpatialMaterial" id=62]
+albedo_color = Color( 0.0901961, 0.0745098, 0.0745098, 1 )
+
+[sub_resource type="SpatialMaterial" id=63]
+albedo_color = Color( 0.180392, 0.054902, 0.054902, 1 )
+
+[sub_resource type="SpatialMaterial" id=64]
+albedo_color = Color( 0.294118, 0.254902, 0.254902, 1 )
+
+[sub_resource type="SpatialMaterial" id=65]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=66]
+albedo_color = Color( 0.807843, 0.443137, 0.282353, 1 )
+
+[sub_resource type="SpatialMaterial" id=67]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=68]
+albedo_color = Color( 0.372549, 0.34902, 0.34902, 1 )
+>>>>>>> Stashed changes
 
 [node name="Game" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.132748, 0, -2.727 )
@@ -444,6 +615,7 @@ transform = Transform( -0.000670182, 0, -0.8, 0, 0.8, 0, 0.8, 0, -0.000670182, -
 [node name="Mom" parent="." instance=ExtResource( 22 )]
 transform = Transform( -0.590747, 0, -0.806857, 0, 1, 0, 0.806857, 0, -0.590747, 4.92872, 0, 11.3179 )
 
+<<<<<<< Updated upstream
 [node name="Player" type="KinematicBody" parent="."]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.08902, 0, -21.7373 )
 script = ExtResource( 1 )
@@ -493,6 +665,11 @@ enabled = true
 cast_to = Vector3( 0, 0, -30 )
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
+=======
+[node name="Player" parent="." instance=ExtResource( 1 )]
+
+[node name="Music_Main_Loop" type="AudioStreamPlayer" parent="."]
+>>>>>>> Stashed changes
 stream = ExtResource( 6 )
 volume_db = -25.687
 pitch_scale = 0.9
@@ -508,6 +685,7 @@ stream = ExtResource( 5 )
 [node name="Menu" parent="." instance=ExtResource( 4 )]
 visible = false
 
+<<<<<<< Updated upstream
 [connection signal="body_entered" from="Maze/sausage" to="Player" method="_on_sausage_body_entered"]
 [connection signal="body_exited" from="Maze/sausage" to="Player" method="_on_sausage_body_exited"]
 [connection signal="body_entered" from="Maze/loaf" to="Player" method="_on_loaf_body_entered"]
@@ -517,3 +695,10 @@ visible = false
 [connection signal="body_entered" from="Maze/tomato" to="Player" method="_on_tomato_body_entered"]
 [connection signal="body_exited" from="Maze/tomato" to="Player" method="_on_tomato_body_exited"]
 [connection signal="timeout" from="Player/Pivot/Blaster/Flash/Timer" to="Player/Pivot/Blaster/Flash" method="_on_Timer_timeout"]
+=======
+[connection signal="area_entered" from="Maze/pizza" to="FX_Pickup" method="_on_pizza_area_entered"]
+[connection signal="body_entered" from="Maze/sausage" to="FX_Pickup" method="_on_sausage_body_entered"]
+[connection signal="body_entered" from="Maze/loaf" to="FX_Pickup" method="_on_loaf_body_entered"]
+[connection signal="body_entered" from="Maze/cheese" to="FX_Pickup" method="_on_cheese_body_entered"]
+[connection signal="body_entered" from="Maze/tomato" to="FX_Pickup" method="_on_tomato_body_entered"]
+>>>>>>> Stashed changes
