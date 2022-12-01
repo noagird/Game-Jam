@@ -4,7 +4,6 @@ extends KinematicBody
 var health = 300
 onready var Player = get_node_or_null("/root/Game/Player")
 
-var health = 300
 var velocity = Vector2()
 var speed = 100
 var detectedPlayer = false
