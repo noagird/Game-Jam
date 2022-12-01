@@ -30,6 +30,8 @@ func _unhandled_input(_event):
 				get_tree().paused = false
 				menu.hide()
 
+func _physics_process(_delta):
+	checkwin()
 
 func load_input():
 	var error = save_file.load(SAVE_PATH)
@@ -55,3 +57,13 @@ func reset():
 	has_tomato = false
 	has_cheese = false
 	has_sausage = false
+
+func checkwin():
+	if has_dough == true:
+		if has_tomato == true:
+			if has_cheese == true:
+				if has_sausage == true:
+					var _winscene = get_tree().change_scene("res://UI/Win.tscn")
+					reset()
+	else:
+		pass
