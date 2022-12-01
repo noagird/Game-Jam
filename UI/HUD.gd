@@ -1,5 +1,7 @@
 extends Control
 
+var Player = get_node_or_null("res://Player/Player.gd")
+
 func _ready():
 	update_time()
 	get_tree().paused = true
@@ -21,3 +23,6 @@ func _on_Timer_timeout():
 		var _scene = get_tree().change_scene("res://UI/Lose.tscn")
 	else:
 		update_time()
+
+func _update_checkboxes():
+	pass
