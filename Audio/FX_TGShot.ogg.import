@@ -11,5 +11,5 @@ dest_files=[ "res://.import/FX_TGShot.ogg-1ed5f1d48932884147f89eae04ce6f2a.oggst
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
