@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Key/key.tscn" type="PackedScene" id=2]
@@ -23,6 +23,8 @@
 [ext_resource path="res://Enemy/Dad.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Enemy/Mom.tscn" type="PackedScene" id=22]
 [ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Enemy/Child.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Enemy/Son.tscn" type="PackedScene" id=25]
 
 [sub_resource type="SpatialMaterial" id=13]
 albedo_texture = ExtResource( 3 )
@@ -430,13 +432,17 @@ material = SubResource( 18 )
 script = ExtResource( 9 )
 
 [node name="Enemy" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 12.9401, 0, -8.61336 )
+transform = Transform( 1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, -12.027, 0.0199018, 17.9158 )
+
+[node name="Child" parent="." instance=ExtResource( 24 )]
 
 [node name="Dad" parent="." instance=ExtResource( 21 )]
 transform = Transform( -0.000670182, 0, -0.8, 0, 0.8, 0, 0.8, 0, -0.000670182, -33.5264, -0.0297339, 17.1685 )
 
+[node name="Son" parent="." instance=ExtResource( 25 )]
+
 [node name="Mom" parent="." instance=ExtResource( 22 )]
-transform = Transform( -0.590747, 0, -0.806857, 0, 1, 0, 0.806857, 0, -0.590747, 4.92872, 0, 11.3179 )
+transform = Transform( -0.0157592, 0, 0.999876, 0, 1, 0, -0.999876, 0, -0.0157592, 16.8909, 0, 2.7871 )
 
 [node name="Player" type="KinematicBody" parent="."]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.08902, 0, -21.7373 )
