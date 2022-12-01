@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://House/House.tscn" type="PackedScene" id=2]
@@ -9,13 +9,6 @@
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Player/Blaster.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Player/Blaster.gd" type="Script" id=11]
-[ext_resource path="res://Assets/photos_2016_1_26_fst_8126d235ec9-0649-433c-b050-b299429e2fb6.png" type="Texture" id=14]
-[ext_resource path="res://Key/pizza.tscn" type="PackedScene" id=15]
-[ext_resource path="res://Key/sausage.tscn" type="PackedScene" id=16]
-[ext_resource path="res://Key/loaf.tscn" type="PackedScene" id=17]
-[ext_resource path="res://Key/cheese.tscn" type="PackedScene" id=18]
-[ext_resource path="res://Key/tomato.tscn" type="PackedScene" id=19]
-[ext_resource path="res://Assets/gray-vinyl-carpet-background-bowen-texture-full-frame_136875-3838.png" type="Texture" id=20]
 [ext_resource path="res://Enemy/Dad.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Enemy/Mom.tscn" type="PackedScene" id=22]
 [ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=23]
@@ -39,7 +32,6 @@ extents = Vector3( 0.5, 0.1, 0.5 )
 [node name="Game" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.132748, 0, -2.727 )
 script = ExtResource( 26 )
-
 
 [node name="Maze" parent="." instance=ExtResource( 2 )]
 
@@ -122,9 +114,4 @@ script = ExtResource( 30 )
 [node name="Menu" parent="UI" instance=ExtResource( 4 )]
 visible = false
 
-[connection signal="area_entered" from="Maze/pizza" to="FX_Pickup" method="_on_pizza_area_entered"]
-[connection signal="body_entered" from="Maze/sausage" to="FX_Pickup" method="_on_sausage_body_entered"]
-[connection signal="body_entered" from="Maze/loaf" to="FX_Pickup" method="_on_loaf_body_entered"]
-[connection signal="body_entered" from="Maze/cheese" to="FX_Pickup" method="_on_cheese_body_entered"]
-[connection signal="body_entered" from="Maze/tomato" to="FX_Pickup" method="_on_tomato_body_entered"]
 [connection signal="timeout" from="Player/Pivot/Blaster/Timer2" to="Player/Pivot/Blaster" method="_on_Timer2_timeout"]
