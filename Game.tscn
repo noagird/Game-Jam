@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=42 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Key/key.tscn" type="PackedScene" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://Assets/gray-vinyl-carpet-background-bowen-texture-full-frame_136875-3838.png" type="Texture" id=20]
 [ext_resource path="res://Enemy/Dad.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Enemy/Mom.tscn" type="PackedScene" id=22]
+[ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=23]
 
 [sub_resource type="SpatialMaterial" id=13]
 albedo_texture = ExtResource( 3 )
@@ -499,7 +500,9 @@ stream = ExtResource( 5 )
 
 [node name="UI" type="CanvasLayer" parent="."]
 
-[node name="Menu" parent="." instance=ExtResource( 4 )]
+[node name="HUD" parent="UI" instance=ExtResource( 23 )]
+
+[node name="Menu" parent="UI" instance=ExtResource( 4 )]
 visible = false
 
 [connection signal="timeout" from="Player/Pivot/Blaster/Flash/Timer" to="Player/Pivot/Blaster/Flash" method="_on_Timer_timeout"]
