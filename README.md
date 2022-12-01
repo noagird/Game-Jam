@@ -1,8 +1,8 @@
-# The Robot Shooter
-A project for my game design class
+# Pizza Time
+Part of the game jam final for our game design class
 
 Description
-a game where you go through a maze to find a key in order to escape a robot infested area
+a game where you go through a house to find semi-hidden ingredients in order to make a pizze before a timer ends. 
 
 ## Implementation
 A first-person player-controlled character that can move with keyboard and mouse control
@@ -37,22 +37,30 @@ Creative use of lights or materials
 
 
 ## References
-https://github.com/BL-MSCH-C220-F22/Project-05-Demo
+https://www.kenney.nl/assets/page:2?q=3d
 
 
-https://gist.github.com/BL-MSCH-C220-F22/c934563d2b75c7dcf9c6a282b456d4e8
+https://www.kenney.nl/assets/animated-characters-2
 
 
-https://kenney.nl/assets/platformer-kit
+https://www.kenney.nl/assets/food-kit
 
 
-https://opengameart.org/content/muzzle-flash-with-model
+https://www.kenney.nl/assets/animated-characters
 
 
-https://opengameart.org/content/bullet-decal
+https://www.kenney.nl/assets/blocky-characters
 
 
-https://kenney.nl/assets/blaster-kit
+https://www.vecteezy.com/vector-art/5139863-peperoni-pizza-vector-icon-illustration-peperoni-pizza-vector-flat-cartoon-style-suitable-for-web-landing-page-banner-flyer-sticker-wallpaper-background
+
+
+https://www.vecteezy.com/vector-art/112243-clock-parts-vector-shapes
+
+
+https://kenney.nl/assets/crosshair-pack
+
+
 
 
 
@@ -60,4 +68,4 @@ https://kenney.nl/assets/blaster-kit
 None
 
 ## Created by
-Travon Ternoir
+Travon Ternoir, Elizabeth Jiang, Noah Girdler, Bryce Cyian
