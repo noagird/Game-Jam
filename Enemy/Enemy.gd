@@ -1,5 +1,7 @@
 extends KinematicBody
 
+
+var health = 300
 onready var Player = get_node_or_null("/root/Game/Player")
 
 var velocity = Vector2()
@@ -7,6 +9,7 @@ var speed = 100
 var detectedPlayer = false
 var playerPosition = Vector3()
 var enemyPosition = Vector3()
+
 
 func _physics_process(_delta):
 	playerPosition = Player.global_transform.origin #error: invalid get index 'global_position' (on base: 'PackedScene')
@@ -28,6 +31,7 @@ func _on_Area_body_entered(body):
 		var sound = get_node_or_null("/root/Game/Robot")
 		if sound != null:
 			sound.playing = true
+
 
 
 func _on_Kill_body_entered(body):
