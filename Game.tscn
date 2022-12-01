@@ -284,6 +284,7 @@ transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -27.7614, 1.42471, -29.9164 )
 
 [node name="pizza" parent="Maze" instance=ExtResource( 15 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.7721, 1.15094, -7.74611 )
+script = null
 
 [node name="sausage" parent="Maze" instance=ExtResource( 16 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.747, 0.278513, 19.8201 )
