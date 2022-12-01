@@ -35,7 +35,7 @@ surfaces/1 = {
 height = 0.594689
 radius = 0.298918
 
-[node name="loaf" type="Area"]
+[node name="loaf" type="Area" groups=["Food"]]
 script = ExtResource( 3 )
 
 [node name="loaf" type="MeshInstance" parent="."]

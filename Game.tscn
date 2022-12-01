@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=41 format=2]
+=======
+[gd_scene load_steps=46 format=2]
+>>>>>>> Stashed changes
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Key/key.tscn" type="PackedScene" id=2]
@@ -502,4 +506,12 @@ stream = ExtResource( 5 )
 [node name="Menu" parent="." instance=ExtResource( 4 )]
 visible = false
 
+[connection signal="body_entered" from="Maze/sausage" to="Player" method="_on_sausage_body_entered"]
+[connection signal="body_exited" from="Maze/sausage" to="Player" method="_on_sausage_body_exited"]
+[connection signal="body_entered" from="Maze/loaf" to="Player" method="_on_loaf_body_entered"]
+[connection signal="body_exited" from="Maze/loaf" to="Player" method="_on_loaf_body_exited"]
+[connection signal="body_entered" from="Maze/cheese" to="Player" method="_on_cheese_body_entered"]
+[connection signal="body_exited" from="Maze/cheese" to="Player" method="_on_cheese_body_exited"]
+[connection signal="body_entered" from="Maze/tomato" to="Player" method="_on_tomato_body_entered"]
+[connection signal="body_exited" from="Maze/tomato" to="Player" method="_on_tomato_body_exited"]
 [connection signal="timeout" from="Player/Pivot/Blaster/Flash/Timer" to="Player/Pivot/Blaster/Flash" method="_on_Timer_timeout"]

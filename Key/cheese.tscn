@@ -477,7 +477,7 @@ surfaces/2 = {
 height = 0.197957
 radius = 0.362516
 
-[node name="cheese" type="Area"]
+[node name="cheese" type="Area" groups=["Food"]]
 script = ExtResource( 4 )
 
 [node name="cheese" type="Spatial" parent="."]
