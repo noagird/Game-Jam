@@ -4,6 +4,7 @@ var menu = null
 const SAVE_PATH = "res://settings.cfg"
 var save_file = ConfigFile.new()
 var inputs = ["left","right","forward","back"]
+var time = 0
 
 func _ready():
 	pause_mode = Node.PAUSE_MODE_PROCESS
