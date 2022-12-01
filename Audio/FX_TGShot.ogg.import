@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/FX_TGShot.ogg-1ed5f1d48932884147f89eae04ce6f2a.oggstr"
+
+[deps]
+
+source_file="res://Audio/FX_TGShot.ogg"
+dest_files=[ "res://.import/FX_TGShot.ogg-1ed5f1d48932884147f89eae04ce6f2a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
