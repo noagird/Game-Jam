@@ -129,7 +129,7 @@ shape = SubResource( 3 )
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -27.7614, 1.42471, -14.1597 )
 
 [node name="pizza" parent="Maze" instance=ExtResource( 15 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.13676, 8.96423 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.7721, 1.15094, -7.74611 )
 
 [node name="sausage" parent="Maze" instance=ExtResource( 16 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.747, 0.278513, 19.8201 )
@@ -371,6 +371,18 @@ operation = 2
 width = 0.162251
 height = 0.982
 
+[node name="GarageDoor" type="CSGMesh" parent="Maze/Walls"]
+transform = Transform( -5.24537e-07, 0, 0.5, 0, 3.3, 0, -12, 0, -2.18557e-08, 26.0594, 3.3, 12.4726 )
+use_collision = true
+mesh = SubResource( 17 )
+material = SubResource( 18 )
+
+[node name="CSGBox" type="CSGBox" parent="Maze/Walls/GarageDoor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.753, -0.52391, 0 )
+operation = 2
+width = 0.186869
+height = 0.951
+
 [node name="Door8" type="CSGMesh" parent="Maze/Walls"]
 transform = Transform( -3.49691e-07, 0, 0.5, 0, 3.3, 0, -8, 0, -2.18557e-08, 25.9634, 3.3, -16.4783 )
 use_collision = true
@@ -406,19 +418,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.521, 0 )
 operation = 2
 width = 0.391
 height = 0.953
-
-[node name="GarageDoor" type="CSGMesh" parent="Maze/Walls"]
-transform = Transform( -5.68248e-07, 0, 0.5, 0, 3.3, 0, -13, 0, -2.18557e-08, 25.9655, 3.3, 16.161 )
-use_collision = true
-mesh = SubResource( 17 )
-material = SubResource( 18 )
-
-[node name="CSGBox" type="CSGBox" parent="Maze/Walls/GarageDoor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.324712, -0.521, 0 )
-operation = 2
-width = 0.16748
-height = 0.988834
-depth = 2.17795
 
 [node name="HouseWall18" type="CSGMesh" parent="Maze/Walls"]
 transform = Transform( 5, 0, 0, 0, 3.3, 0, 0, 0, 0.5, -13.3362, 3.36499, 15.0379 )
