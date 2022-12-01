@@ -132,16 +132,16 @@ transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -27.7614, 1.42471, -14.1597 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.13676, 8.96423 )
 
 [node name="sausage" parent="Maze" instance=ExtResource( 16 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.01984, 6.81898 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.747, 0.278513, 19.8201 )
 
 [node name="loaf" parent="Maze" instance=ExtResource( 17 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.14205, 5.11476 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 45.3025, 1.14205, 5.11476 )
 
 [node name="cheese" parent="Maze" instance=ExtResource( 18 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.89419, 4.0938 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -47.2537, 0.89419, -0.247899 )
 
 [node name="tomato" parent="Maze" instance=ExtResource( 19 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.02026, 2.95008 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 46.2157, 1.02026, -2.42979 )
 
 [node name="Walls" type="StaticBody" parent="Maze"]
 
