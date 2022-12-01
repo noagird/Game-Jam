@@ -127,6 +127,7 @@ color = Color( 0.215686, 0.215686, 0.215686, 0.392157 )
 margin_left = 5.0
 margin_right = 95.0
 margin_bottom = 50.0
+align = 1
 valign = 1
 
 [node name="MessageColorRect" type="ColorRect" parent="."]
@@ -153,4 +154,8 @@ pause_mode = 2
 wait_time = 5.0
 one_shot = true
 
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
 [connection signal="timeout" from="Message/MessageTimer" to="." method="_on_MessageTimer_timeout"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
