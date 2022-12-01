@@ -1,14 +1,17 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://House/House.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Enemy/Son.gd" type="Script" id=3]
 [ext_resource path="res://UI/InputRemapMenu.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/315844__gneube__zombie-snarl.wav" type="AudioStream" id=5]
 [ext_resource path="res://Audio/Music_Main_Loop.ogg" type="AudioStream" id=6]
 [ext_resource path="res://FX_TGShot.gd" type="Script" id=7]
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Enemy/Child.gd" type="Script" id=9]
 [ext_resource path="res://Player/Blaster.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Player/Blaster.gd" type="Script" id=11]
+[ext_resource path="res://Enemy/Mom.gd" type="Script" id=12]
 [ext_resource path="res://Enemy/Dad.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Enemy/Mom.tscn" type="PackedScene" id=22]
 [ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=23]
@@ -39,14 +42,17 @@ script = ExtResource( 26 )
 transform = Transform( 1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, -12.027, 0.0199018, 17.9158 )
 
 [node name="Child" parent="." groups=["Enemy"] instance=ExtResource( 24 )]
+script = ExtResource( 9 )
 
 [node name="Dad" parent="." groups=["Enemy"] instance=ExtResource( 21 )]
 transform = Transform( -0.000670182, 0, -0.8, 0, 0.8, 0, 0.8, 0, -0.000670182, -33.5264, -0.0297339, 17.1685 )
 
 [node name="Son" parent="." groups=["Enemy"] instance=ExtResource( 25 )]
+script = ExtResource( 3 )
 
 [node name="Mom" parent="." groups=["Enemy"] instance=ExtResource( 22 )]
 transform = Transform( -0.0157592, 0, 0.999876, 0, 1, 0, -0.999876, 0, -0.0157592, 16.8909, 0, 2.7871 )
+script = ExtResource( 12 )
 
 [node name="Player" type="KinematicBody" parent="."]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.08902, 0, -21.7373 )

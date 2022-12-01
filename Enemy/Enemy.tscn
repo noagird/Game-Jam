@@ -149,6 +149,7 @@ skeleton = NodePath("../..")
 material/0 = ExtResource( 2 )
 
 [node name="Kill" type="Area" parent="."]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Kill"]
 shape = SubResource( 9 )
