@@ -1,4 +1,4 @@
-[gd_scene load_steps=77 format=2]
+[gd_scene load_steps=93 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Key/key.tscn" type="PackedScene" id=2]
@@ -179,7 +179,57 @@ albedo_color = Color( 0.309804, 0.290196, 0.290196, 1 )
 albedo_color = Color( 0.309804, 0.290196, 0.290196, 1 )
 
 [sub_resource type="SpatialMaterial" id=51]
-albedo_color = Color( 0.47451, 0.0235294, 0.972549, 1 )
+albedo_color = Color( 0.713726, 0.0941176, 0.0941176, 1 )
+
+[sub_resource type="SpatialMaterial" id=52]
+albedo_color = Color( 0.713726, 0.0941176, 0.0941176, 1 )
+
+[sub_resource type="SpatialMaterial" id=53]
+albedo_color = Color( 0.533333, 0.529412, 0.835294, 1 )
+
+[sub_resource type="SpatialMaterial" id=54]
+albedo_color = Color( 0.533333, 0.529412, 0.835294, 1 )
+
+[sub_resource type="SpatialMaterial" id=55]
+albedo_color = Color( 0.470588, 0.0901961, 0.0901961, 1 )
+
+[sub_resource type="SpatialMaterial" id=56]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=57]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=58]
+albedo_color = Color( 0.4, 0.447059, 0.752941, 1 )
+
+[sub_resource type="SpatialMaterial" id=59]
+albedo_color = Color( 0.482353, 0.380392, 0.380392, 1 )
+
+[sub_resource type="SpatialMaterial" id=60]
+albedo_color = Color( 0.65098, 0.65098, 0.65098, 1 )
+
+[sub_resource type="SpatialMaterial" id=61]
+
+[sub_resource type="SpatialMaterial" id=62]
+albedo_color = Color( 0.0901961, 0.0745098, 0.0745098, 1 )
+
+[sub_resource type="SpatialMaterial" id=63]
+albedo_color = Color( 0.180392, 0.054902, 0.054902, 1 )
+
+[sub_resource type="SpatialMaterial" id=64]
+albedo_color = Color( 0.294118, 0.254902, 0.254902, 1 )
+
+[sub_resource type="SpatialMaterial" id=65]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=66]
+albedo_color = Color( 0.807843, 0.443137, 0.282353, 1 )
+
+[sub_resource type="SpatialMaterial" id=67]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=68]
+albedo_color = Color( 0.372549, 0.34902, 0.34902, 1 )
 
 [sub_resource type="CapsuleShape" id=4]
 radius = 0.5
@@ -239,7 +289,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 45.3025, 1.14205, 5.11476 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -47.2537, 0.89419, -0.247899 )
 
 [node name="tomato" parent="Maze" instance=ExtResource( 19 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 43.5007, 2.31236, -2.42979 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 43.5007, 1.73605, -2.42979 )
 
 [node name="Walls" type="StaticBody" parent="Maze"]
 
@@ -1136,7 +1186,7 @@ depth = 7.83698
 material = SubResource( 35 )
 
 [node name="Couch" type="CSGBox" parent="Maze/Decorations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 47.5843, 1.54375, 10.3853 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 47.5843, 0.488842, 10.3853 )
 use_collision = true
 height = 1.22595
 depth = 5.49461
@@ -1909,36 +1959,6 @@ height = 1.13004
 depth = 1.04947
 material = SubResource( 50 )
 
-[node name="Chairs11" type="CSGBox" parent="Maze/Decorations"]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 55.66, 1.20112, -14.1896 )
-use_collision = true
-width = 1.34846
-height = 2.71424
-depth = 0.002
-material = SubResource( 49 )
-
-[node name="CSGBox" type="CSGBox" parent="Maze/Decorations/Chairs11"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.733563, 0.528881 )
-width = 1.30529
-height = 1.13004
-depth = 1.04947
-material = SubResource( 50 )
-
-[node name="Chairs12" type="CSGBox" parent="Maze/Decorations"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55.4142, 1.1971, -19.6992 )
-use_collision = true
-width = 1.34846
-height = 2.71424
-depth = 0.002
-material = SubResource( 49 )
-
-[node name="CSGBox" type="CSGBox" parent="Maze/Decorations/Chairs12"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.733563, 0.528881 )
-width = 1.30529
-height = 1.13004
-depth = 1.04947
-material = SubResource( 50 )
-
 [node name="Chairs6" type="CSGBox" parent="Maze/Decorations"]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.5653, 1.20112, -10.6967 )
 use_collision = true
@@ -1954,21 +1974,6 @@ height = 1.13004
 depth = 1.04947
 material = SubResource( 50 )
 
-[node name="Chairs13" type="CSGBox" parent="Maze/Decorations"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 49.53, 1.20112, -17.2331 )
-use_collision = true
-width = 1.34846
-height = 2.71424
-depth = 0.002
-material = SubResource( 49 )
-
-[node name="CSGBox" type="CSGBox" parent="Maze/Decorations/Chairs13"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.733563, 0.528881 )
-width = 1.30529
-height = 1.13004
-depth = 1.04947
-material = SubResource( 50 )
-
 [node name="Chairs7" type="CSGBox" parent="Maze/Decorations"]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 35.4088, 1.20112, -9.65116 )
 use_collision = true
@@ -1978,21 +1983,6 @@ depth = 0.002
 material = SubResource( 49 )
 
 [node name="CSGBox" type="CSGBox" parent="Maze/Decorations/Chairs7"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.733563, 0.528881 )
-width = 1.30529
-height = 1.13004
-depth = 1.04947
-material = SubResource( 50 )
-
-[node name="Chairs14" type="CSGBox" parent="Maze/Decorations"]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 60.5267, 1.20112, -17.2375 )
-use_collision = true
-width = 1.34846
-height = 2.71424
-depth = 0.002
-material = SubResource( 49 )
-
-[node name="CSGBox" type="CSGBox" parent="Maze/Decorations/Chairs14"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.733563, 0.528881 )
 width = 1.30529
 height = 1.13004
@@ -2030,10 +2020,605 @@ depth = 1.04947
 material = SubResource( 50 )
 
 [node name="Car" type="CSGCylinder" parent="Maze/Decorations"]
-transform = Transform( 1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 0, 1.4454, 1.9474 )
+transform = Transform( 1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 56.2912, 1.45783, 13.923 )
+use_collision = true
 radius = 1.06637
 height = 6.22586
 material = SubResource( 51 )
+
+[node name="CSGSphere" type="CSGSphere" parent="Maze/Decorations/Car"]
+transform = Transform( 0.253674, 7.49046e-08, 0.96729, -9.65862e-09, 1, -7.49046e-08, -0.96729, 9.65863e-09, 0.253674, 0.0340889, 3.07526, 0.000350952 )
+radius = 1.02476
+material = SubResource( 52 )
+
+[node name="CSGSphere2" type="CSGSphere" parent="Maze/Decorations/Car"]
+transform = Transform( 0.253674, 7.49046e-08, 0.96729, -9.65862e-09, 1, -7.49046e-08, -0.96729, 9.65863e-09, 0.253674, 0.0340886, -3.08096, 0.000350952 )
+radius = 1.02476
+material = SubResource( 52 )
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Maze/Decorations/Car"]
+transform = Transform( 1, -4.22599e-08, -4.36873e-08, -4.22599e-08, 0.0332075, -0.999448, 4.36873e-08, 0.999448, 0.0332075, -0.785821, 1.84751, 0.698784 )
+radius = 0.693767
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Maze/Decorations/Car"]
+transform = Transform( 1, -4.22599e-08, -4.36873e-08, -4.22599e-08, 0.0332075, -0.999448, 4.36873e-08, 0.999448, 0.0332075, -0.901708, 1.84751, -0.861574 )
+radius = 0.693767
+
+[node name="CSGCylinder3" type="CSGCylinder" parent="Maze/Decorations/Car"]
+transform = Transform( 1, -4.22599e-08, -4.36873e-08, -4.22599e-08, 0.0332075, -0.999448, 4.36873e-08, 0.999448, 0.0332075, -0.901708, -2.062, -0.861574 )
+radius = 0.693767
+
+[node name="CSGCylinder4" type="CSGCylinder" parent="Maze/Decorations/Car"]
+transform = Transform( 1, -4.22599e-08, -4.36873e-08, -4.22599e-08, 0.0332075, -0.999448, 4.36873e-08, 0.999448, 0.0332075, -0.901708, -2.062, 0.746549 )
+radius = 0.693767
+
+[node name="CSGCylinder5" type="CSGCylinder" parent="Maze/Decorations/Car"]
+transform = Transform( 0.0423465, 0.999103, -4.36722e-08, -0.999103, 0.0423465, 4.18604e-08, 4.36722e-08, 4.18604e-08, 1, 0.836885, -0.954619, 0 )
+radius = 0.844547
+height = 0.726393
+material = SubResource( 53 )
+
+[node name="CSGSphere" type="CSGSphere" parent="Maze/Decorations/Car/CSGCylinder5"]
+transform = Transform( 0.808539, 0.008115, 0.588386, 0.00811496, 0.999656, -0.0249385, -0.588386, 0.0249385, 0.808196, -0.00861537, 0.307278, 0 )
+radius = 0.829086
+material = SubResource( 54 )
+
+[node name="CSGCylinder6" type="CSGCylinder" parent="Maze/Decorations/Car"]
+transform = Transform( 1, 4.19824e-11, 0.000959931, -4.19398e-11, 1, -4.19824e-11, -0.000959931, 4.19398e-11, 1, 0.194105, 3.53483, -0.460299 )
+radius = 0.26064
+height = 0.994221
+
+[node name="CSGCylinder7" type="CSGCylinder" parent="Maze/Decorations/Car"]
+transform = Transform( 1, 4.19824e-11, 0.000959931, -4.19398e-11, 1, -4.19824e-11, -0.000959931, 4.19398e-11, 1, 0.194105, 3.53483, 0.429393 )
+radius = 0.26064
+height = 0.994221
+
+[node name="SpotLight" type="SpotLight" parent="Maze/Decorations/Car"]
+transform = Transform( 1, -5.69437e-08, -4.16604e-08, -5.69437e-08, -0.302719, -0.95308, 4.16604e-08, 0.95308, -0.302719, 0.125944, 3.94812, -0.746378 )
+spot_range = 2.608
+
+[node name="SpotLight2" type="SpotLight" parent="Maze/Decorations/Car"]
+transform = Transform( 1, -5.69437e-08, -4.16604e-08, -5.69437e-08, -0.302719, -0.95308, 4.16604e-08, 0.95308, -0.302719, 0.163913, 4.0049, 0.337298 )
+light_energy = 0.0
+light_indirect_energy = 0.993
+spot_range = 2.516
+
+[node name="CSGBox" type="CSGBox" parent="Maze/Decorations/Car"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0613904, -0.350183, 0.76987 )
+width = 1.14276
+height = 1.5198
+depth = 0.71712
+material = SubResource( 55 )
+
+[node name="CSGBox" type="CSGBox" parent="Maze/Decorations/Car/CSGBox"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0906405, -0.504324, 0.008811 )
+width = 0.0757056
+height = 0.291885
+depth = 1.06439
+
+[node name="Shelf" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.3228, 2.7102, 1.804 )
+use_collision = true
+width = 35.8586
+height = 0.335245
+depth = 1.37729
+material = SubResource( 56 )
+
+[node name="Shelf2" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.6201, 4.71351, 1.804 )
+use_collision = true
+width = 35.8586
+height = 0.335245
+depth = 1.37729
+material = SubResource( 57 )
+
+[node name="Shelf11" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.6201, 4.87621, 24.0547 )
+use_collision = true
+width = 35.8586
+height = 0.335245
+depth = 1.37729
+material = SubResource( 57 )
+
+[node name="Shelf12" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 65.6592, 4.87855, 20.2437 )
+use_collision = true
+width = 35.8586
+height = 0.335245
+depth = 1.37729
+material = SubResource( 57 )
+
+[node name="Shelf13" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 65.6592, 3.2693, 20.2437 )
+use_collision = true
+width = 35.8586
+height = 0.335245
+depth = 1.37729
+material = SubResource( 57 )
+
+[node name="Shelf14" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 65.6592, 1.64934, 20.2437 )
+use_collision = true
+width = 35.8586
+height = 0.335245
+depth = 1.37729
+material = SubResource( 57 )
+
+[node name="Shelf15" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.6414, 3.26744, 3.00598 )
+use_collision = true
+width = 35.8586
+height = 0.335245
+depth = 1.37729
+material = SubResource( 57 )
+
+[node name="Shelf16" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.7782, 4.86778, 3.00598 )
+use_collision = true
+width = 35.8586
+height = 0.335245
+depth = 1.37729
+material = SubResource( 57 )
+
+[node name="Shelf3" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 65.7634, 3.88095, -3.05788 )
+use_collision = true
+width = 11.2003
+height = 0.335245
+depth = 1.37729
+material = SubResource( 57 )
+
+[node name="Shelf4" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 43.0933, 3.88095, -3.40899 )
+use_collision = true
+width = 10.9311
+height = 0.335245
+depth = 1.37729
+material = SubResource( 57 )
+
+[node name="Shelf8" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 43.0933, 1.53407, -3.40899 )
+use_collision = true
+width = 10.9311
+height = 0.335245
+depth = 1.37729
+material = SubResource( 57 )
+
+[node name="Shelf5" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 53.106, 3.88095, -3.40899 )
+use_collision = true
+width = 10.885
+height = 0.335245
+depth = 1.37729
+material = SubResource( 57 )
+
+[node name="Shelf7" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 53.106, 1.32495, -3.40899 )
+use_collision = true
+width = 10.8497
+height = 0.335245
+depth = 1.37729
+material = SubResource( 57 )
+
+[node name="Shelf9" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 54.6038, 1.32495, -3.40899 )
+use_collision = true
+width = 10.8497
+height = 0.335245
+depth = 1.37729
+material = SubResource( 57 )
+
+[node name="Shelf10" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 65.4132, 1.32495, -3.40899 )
+use_collision = true
+width = 10.8497
+height = 0.335245
+depth = 1.37729
+material = SubResource( 57 )
+
+[node name="Shelf6" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 55.1403, 3.88095, -3.40899 )
+use_collision = true
+width = 10.9201
+height = 0.335245
+depth = 1.37729
+material = SubResource( 57 )
+
+[node name="String" type="CSGCylinder" parent="Maze/Decorations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 59.999, 4.44835, -2.43337 )
+radius = 0.001
+height = 5.27801
+
+[node name="Kitchen" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 62.6108, 0.38787, -23.6014 )
+use_collision = true
+width = 39.5881
+height = 2.26479
+depth = 1.84631
+
+[node name="CSGBox" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.00364, 0.0148969, 0 )
+height = 2.25944
+depth = 29.6143
+
+[node name="CSGBox2" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.00364, 4.72427, 0 )
+height = 2.25944
+depth = 29.6143
+
+[node name="CSGBox3" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.34707, 4.73039, 0 )
+height = 2.25944
+depth = 29.6143
+
+[node name="CSGBox4" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3656, 0.963803, 0 )
+operation = 2
+height = 0.854802
+depth = 1.17995
+
+[node name="CSGBox5" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.30992, 0.952421, 0 )
+operation = 2
+width = 1.90742
+height = 0.872249
+depth = 1.17995
+
+[node name="CSGSphere" type="CSGCylinder" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.29567, 0.172602, -0.116297 )
+operation = 2
+radius = 0.189626
+height = 0.784993
+
+[node name="CSGSphere2" type="CSGCylinder" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.58, 0.172602, -0.116297 )
+operation = 2
+radius = 0.189626
+height = 0.784993
+
+[node name="CSGSphere3" type="CSGCylinder" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.214, 0.172602, -0.308771 )
+radius = 0.477679
+height = 0.784993
+material = SubResource( 58 )
+
+[node name="CSGSphere4" type="CSGCylinder" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.89244, 0.172602, -0.308771 )
+radius = 0.408836
+height = 0.784993
+material = SubResource( 58 )
+
+[node name="CSGSphere5" type="CSGCylinder" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.59301, 0.172602, -0.308771 )
+radius = 0.282359
+height = 0.749567
+material = SubResource( 58 )
+
+[node name="CSGSphere6" type="CSGCylinder" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.88134, 0.172602, 0.257362 )
+radius = 0.282359
+height = 0.749567
+material = SubResource( 58 )
+
+[node name="CSGCylinder" type="CSGCylinder" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.16483, 1.29512, -0.853222 )
+radius = 0.0862089
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 0.906308, -0.422618, 0, 0.422618, 0.906308, -8.16693, 1.81421, -0.832033 )
+radius = 0.0862089
+height = 0.45211
+
+[node name="CSGCylinder3" type="CSGCylinder" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 0.707107, -0.707107, 0, 0.707107, 0.707107, -8.16867, 2.05714, -0.688486 )
+radius = 0.0862089
+height = 0.239637
+
+[node name="CSGCylinder4" type="CSGCylinder" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, -8.16867, 1.97456, -0.572491 )
+radius = 0.0862089
+height = 0.239637
+
+[node name="CSGCylinder5" type="CSGCylinder" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.4576, 1.29512, -0.853222 )
+radius = 0.0862089
+
+[node name="CSGCylinder6" type="CSGCylinder" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 0.906308, -0.422618, 0, 0.422618, 0.906308, -10.4597, 1.81421, -0.832033 )
+radius = 0.0862089
+height = 0.45211
+
+[node name="CSGCylinder7" type="CSGCylinder" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 0.707107, -0.707107, 0, 0.707107, 0.707107, -10.4614, 2.05714, -0.688486 )
+radius = 0.0862089
+height = 0.239637
+
+[node name="CSGCylinder8" type="CSGCylinder" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, -10.4614, 1.97456, -0.572491 )
+radius = 0.0862089
+height = 0.239637
+
+[node name="CSGBox6" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000919342, 0.585543, -0.00120926 )
+height = 1.21388
+depth = 1.23667
+material = SubResource( 59 )
+
+[node name="CSGBox7" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.01157, 1.76809, 0.0099926 )
+operation = 2
+width = 1.96856
+height = 1.21388
+depth = 1.06771
+material = SubResource( 59 )
+
+[node name="CSGBox8" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.144886, 4.38509, 0.0583153 )
+height = 1.25522
+material = SubResource( 60 )
+
+[node name="CSGBox9" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.935505, 4.32549, 0.161749 )
+width = 0.0817927
+height = 0.501495
+depth = 1.95008
+material = SubResource( 61 )
+
+[node name="CSGBox10" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.41299, 4.38509, 0.0583153 )
+height = 1.25522
+material = SubResource( 60 )
+
+[node name="CSGBox11" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.20361, 4.32549, 0.161749 )
+width = 0.0817927
+height = 0.501495
+depth = 1.95008
+material = SubResource( 61 )
+
+[node name="CSGBox12" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.69435, 4.38509, 0.0583153 )
+height = 1.25522
+material = SubResource( 60 )
+
+[node name="CSGBox13" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.48497, 4.32549, 0.161749 )
+width = 0.0817927
+height = 0.501495
+depth = 1.95008
+material = SubResource( 61 )
+
+[node name="CSGBox14" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.92516, 4.38509, 0.0583153 )
+height = 1.25522
+material = SubResource( 60 )
+
+[node name="CSGBox15" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.71578, 4.32549, 0.161749 )
+width = 0.0817927
+height = 0.501495
+depth = 1.95008
+material = SubResource( 61 )
+
+[node name="CSGBox16" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.10645, 4.38509, 0.0583153 )
+height = 1.25522
+material = SubResource( 60 )
+
+[node name="CSGBox17" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.89707, 4.32549, 0.161749 )
+width = 0.0817927
+height = 0.501495
+depth = 1.95008
+material = SubResource( 61 )
+
+[node name="CSGBox18" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.2955, 4.38509, 0.0583153 )
+height = 1.25522
+material = SubResource( 60 )
+
+[node name="CSGBox19" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0861, 4.32549, 0.161749 )
+width = 0.0817927
+height = 0.501495
+depth = 1.95008
+material = SubResource( 61 )
+
+[node name="CSGBox20" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.4968, 4.38509, 0.0583153 )
+height = 1.25522
+material = SubResource( 60 )
+
+[node name="CSGBox21" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.2874, 4.32549, 0.161749 )
+width = 0.0817927
+height = 0.501495
+depth = 1.95008
+material = SubResource( 61 )
+
+[node name="CSGBox22" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.8884, 4.38509, 0.0583153 )
+height = 1.25522
+material = SubResource( 60 )
+
+[node name="CSGBox23" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.6791, 4.32549, 0.161749 )
+width = 0.0817927
+height = 0.501495
+depth = 1.95008
+material = SubResource( 61 )
+
+[node name="CSGBox24" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.2616, 4.38509, 0.0583153 )
+height = 1.25522
+material = SubResource( 60 )
+
+[node name="CSGBox25" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.0523, 4.32549, 0.161749 )
+width = 0.0817927
+height = 0.501495
+depth = 1.95008
+material = SubResource( 61 )
+
+[node name="CSGBox26" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.71138, 2.38419e-07, 3.69367 )
+material = SubResource( 62 )
+
+[node name="CSGBox27" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.73121, 0.75547, 3.65434 )
+operation = 2
+width = 0.0652856
+height = 0.165915
+depth = 0.465223
+
+[node name="CSGBox28" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.71138, 2.38419e-07, 5.84026 )
+material = SubResource( 62 )
+
+[node name="CSGBox29" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.73121, 0.75547, 5.80093 )
+operation = 2
+width = 0.0652856
+height = 0.165915
+depth = 0.465223
+
+[node name="CSGBox30" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.22185, 0.20802, 8.26878 )
+material = SubResource( 63 )
+
+[node name="CSGCylinder9" type="CSGCylinder" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.83984, 0.840352, 8.26878 )
+radius = 0.580386
+height = 0.877251
+material = SubResource( 64 )
+
+[node name="CSGCylinder11" type="CSGCylinder" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.16886, 0.840352, 8.90278 )
+radius = 0.183475
+height = 0.877251
+material = SubResource( 64 )
+
+[node name="CSGCylinder12" type="CSGCylinder" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.16886, 0.840352, 11.1645 )
+radius = 0.183475
+height = 0.877251
+material = SubResource( 64 )
+
+[node name="CSGBox31" type="CSGSphere" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.83984, 0.513711, 8.26878 )
+operation = 2
+radius = 0.804073
+
+[node name="CSGBox32" type="CSGBox" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.21187, 0.192326, 10.4208 )
+material = SubResource( 63 )
+
+[node name="CSGCylinder10" type="CSGCylinder" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.82986, 0.824658, 10.4208 )
+radius = 0.580386
+height = 0.877251
+material = SubResource( 64 )
+
+[node name="CSGBox33" type="CSGSphere" parent="Maze/Decorations/Kitchen"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.82986, 0.498017, 10.4208 )
+operation = 2
+radius = 0.804073
+
+[node name="Hammer" type="CSGCylinder" parent="Maze/Decorations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55.173, 1.48768, 4.49481 )
+radius = 0.0631639
+height = 0.645899
+material = SubResource( 65 )
+
+[node name="CSGBox" type="CSGCylinder" parent="Maze/Decorations/Hammer"]
+transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0.275153, 0 )
+radius = 0.0831785
+height = 0.249412
+material = SubResource( 66 )
+
+[node name="Speaker" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5012, 1.0093, 2.78415 )
+use_collision = true
+width = 1.05102
+height = 2.61063
+material = SubResource( 67 )
+
+[node name="CSGBox" type="CSGBox" parent="Maze/Decorations/Speaker"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.115416 )
+width = 0.626425
+height = 2.38603
+depth = 1.79804
+material = SubResource( 68 )
+
+[node name="Speaker2" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.2606, 1.0093, 2.78415 )
+use_collision = true
+width = 1.05102
+height = 2.61063
+material = SubResource( 67 )
+
+[node name="CSGBox" type="CSGBox" parent="Maze/Decorations/Speaker2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.115416 )
+width = 0.626425
+height = 2.38603
+depth = 1.79804
+material = SubResource( 68 )
+
+[node name="Speaker5" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 27.451, 1.0093, 24.2437 )
+use_collision = true
+width = 1.05102
+height = 2.61063
+material = SubResource( 67 )
+
+[node name="CSGBox" type="CSGBox" parent="Maze/Decorations/Speaker5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.115416 )
+width = 0.626425
+height = 2.38603
+depth = 1.79804
+material = SubResource( 68 )
+
+[node name="Speaker6" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 24.4685, 1.0093, 24.3972 )
+use_collision = true
+width = 1.05102
+height = 2.61063
+material = SubResource( 67 )
+
+[node name="CSGBox" type="CSGBox" parent="Maze/Decorations/Speaker6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.115416 )
+width = 0.626425
+height = 2.38603
+depth = 1.79804
+material = SubResource( 68 )
+
+[node name="Speaker3" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 34.691, 1.0093, -0.733868 )
+use_collision = true
+width = 1.05102
+height = 2.61063
+material = SubResource( 67 )
+
+[node name="CSGBox" type="CSGBox" parent="Maze/Decorations/Speaker3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.115416 )
+width = 0.626425
+height = 2.38603
+depth = 1.79804
+material = SubResource( 68 )
+
+[node name="Speaker4" type="CSGBox" parent="Maze/Decorations"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 20.7122, 1.0637, -0.644902 )
+use_collision = true
+width = 1.05102
+height = 2.61063
+material = SubResource( 67 )
+
+[node name="CSGBox" type="CSGBox" parent="Maze/Decorations/Speaker4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.115416 )
+width = 0.626425
+height = 2.38603
+depth = 1.79804
+material = SubResource( 68 )
 
 [node name="Enemy" parent="." instance=ExtResource( 8 )]
 transform = Transform( 1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, -12.027, 0.0199018, 17.9158 )
